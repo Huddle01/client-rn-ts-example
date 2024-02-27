@@ -9,6 +9,7 @@ const huddleClient = new HuddleClient({
     activeSpeakers: {
       size: 8,
     },
+    logging: true,
   },
 });
 
