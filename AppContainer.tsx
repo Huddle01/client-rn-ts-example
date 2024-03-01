@@ -1,4 +1,5 @@
 import {
+  useDevices,
   useLocalAudio,
   useLocalVideo,
   usePeerIds,
@@ -30,6 +31,9 @@ export default function AppContainer(): JSX.Element {
     changeAudioSource,
   } = useLocalAudio();
   const {peerIds} = usePeerIds();
+  const {getPermission} = useDevices({
+    type: 'cam',
+  });
 
   return (
     <ScrollView style={styles.background}>
@@ -54,14 +58,16 @@ export default function AppContainer(): JSX.Element {
               <View style={styles.button}>
                 <Button
                   title="Fetch and Produce Video Stream"
-                  onPress={enableVideo}
+                  onPress={async () => {
+                    const status = await getPermission();
+                    if (status.permission === 'granted') {
+                      await enableVideo();
+                    }
+                  }}
                 />
               </View>
               <View style={styles.button}>
-                <Button
-                  title=" Fetch and Produce Audio Stream"
-                  onPress={enableAudio}
-                />
+                <Button title=" Disable Video stream" onPress={disableVideo} />
               </View>
             </View>
           </View>
