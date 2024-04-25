@@ -1351,24 +1351,24 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
-"@huddle01/react@2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@huddle01/react/-/react-2.0.5.tgz#bf2c2c65d8ce2402b5fe6d2daf068d69acffc373"
-  integrity sha512-G1dJzfstbED+JgmTwf8gMTTmjcNuDLQP3BO9TGs+JpzX4h/RewTzTCeNR7E0lJVbPAjVg7Pi4hbrVSxF9Duy7g==
+"@huddle01/react@^2.0.10":
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@huddle01/react/-/react-2.0.10.tgz#4e50fbc2f8e5c15a0746a04dc7bf01828584cc4f"
+  integrity sha512-3T5vGTPitu+8ZfZn4hri+VDPtSo7Pn4DK6+2s4HPNyH2t0SpDbiVnlT1WQ9sJDSuCbKTNh6xPz/tQcA/FuBpOw==
   dependencies:
-    "@huddle01/web-core" "2.0.5"
+    "@huddle01/web-core" "2.0.9"
     "@tanstack/react-query" "^4.32.6"
     "@testing-library/react" "^14.0.0"
     "@testing-library/react-hooks" "^8.0.1"
     axios "^1.6.7"
     react "18.2.0"
 
-"@huddle01/web-core@2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@huddle01/web-core/-/web-core-2.0.5.tgz#13ebfeb5aafd5393609ca6993c0b4d871906a37c"
-  integrity sha512-dUn+VMGLGOZntSHlHx0JTImcc3zYblmgEGfwWW4eyPpBOkIpuaXQE+cvDCyNHkGiB22KPAPM/RCTgIqeMFRrTg==
+"@huddle01/web-core@2.0.9":
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/@huddle01/web-core/-/web-core-2.0.9.tgz#d7a021755e9bba6402fb69dad2fbefc6f797e025"
+  integrity sha512-GVxOss8UFqLi14bx1dOmD+nW2wylyo1vjil8NKT8NSCi0wDAgYLx6Kww/FZeyo97EJsU8cVoPKY3sZ2ZAy2y3w==
   dependencies:
-    mediasoup-client "3.7.4"
+    mediasoup-client "3.7.6"
     zod "^3.22.1"
 
 "@humanwhocodes/config-array@^0.11.10":
@@ -5456,10 +5456,10 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-mediasoup-client@3.7.4:
-  version "3.7.4"
-  resolved "https://registry.yarnpkg.com/mediasoup-client/-/mediasoup-client-3.7.4.tgz#379b60742ec350a1546b490f7719725f3dbb984a"
-  integrity sha512-mO0M0EMu8ZT4J5Sr2vfDxE115p9NuNwBlgXmJmnqE+aQjb/J9I8G1Di5SYYT1Ge7DC8AN/wczdtZcic2+uG0yg==
+mediasoup-client@3.7.6:
+  version "3.7.6"
+  resolved "https://registry.yarnpkg.com/mediasoup-client/-/mediasoup-client-3.7.6.tgz#3dbd73ffe30c37852134d527b82e5eb3e90fe9e3"
+  integrity sha512-QZ2Dva38KLOuFle9fg+hgiWMJJhxa1NM3b08zzAnx/1xIEFILqxZN/wgwG/aKMqVA2Qf3MNLcbkTlxpZNr5koQ==
   dependencies:
     "@types/debug" "^4.1.12"
     awaitqueue "^3.0.2"
